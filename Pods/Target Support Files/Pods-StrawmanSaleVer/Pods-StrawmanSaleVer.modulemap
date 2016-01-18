@@ -1,0 +1,6 @@
+framework module Pods_StrawmanSaleVer {
+  umbrella header "Pods-StrawmanSaleVer-umbrella.h"
+
+  export *
+  module * { export * }
+}
