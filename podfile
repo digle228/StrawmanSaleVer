@@ -7,8 +7,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'StrawmanSaleVer’ do
 
+
+pod 'ParseUI'
 pod 'QRCode', '~> 0.5'
-pod 'YYWebImage' 
+pod 'YYWebImage'
 pod 'SVProgressHUD'
 pod 'Alamofire', '~> 3.0'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
@@ -19,4 +21,5 @@ pod 'FBSDKLoginKit'
 
 
 end
+
 

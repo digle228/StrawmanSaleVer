@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-StrawmanSaleVer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,12 +67,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11FCEFB99A74F17656BA90B2FBD8B644</key>
+		<key>1DEAF8FE248313DDDCE9D50A9BB1BCA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>465275991DC961D3C041937467AD3E7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55BEDBFDC20D478388D5C7C9FB2354B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E0D5F8F006E5054C550EB54A6D72A1B</key>
+		<key>673A04B3529CB03C3C902ED3C89C9809</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98049DE7A98711BD3100404EDFBE52FD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9BE62EFBE32A7B0EEDD8BD8F660261B3</key>
+		<key>9CEB8C81CE31FB53B42DD08ECA445AC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,12 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D01D52A9FA94EC7A7064867B7851F763</key>
+		<key>D8470470292BC39EE263E6103508E41A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8470470292BC39EE263E6103508E41A</key>
+		<key>E1F78B1C5F8F2CCD0E68552EAF2B9B52</key>
 		<dict>
 			<key>primary</key>
 			<true/>

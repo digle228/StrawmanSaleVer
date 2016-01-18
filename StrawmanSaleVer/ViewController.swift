@@ -6,7 +6,11 @@
 //  Copyright © 2016年 alphacamp. All rights reserved.
 //
 
+
 import UIKit
+import CoreLocation
+import MapKit
+import Parse
 
 class ViewController: UIViewController {
 

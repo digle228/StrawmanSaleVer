@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07B85975897239D5170ADECD /* Pods_StrawmanSaleVer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B352BFD65F2E2740CC120169 /* Pods_StrawmanSaleVer.framework */; };
+		91BB69CF1C4D3AFE00603A35 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */; };
+		91BB69D11C4D462F00603A35 /* CustomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */; };
+		91BB69D31C4D464500603A35 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */; };
 		91E8E5441C4D1B1D002E587A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8E5431C4D1B1D002E587A /* AppDelegate.swift */; };
 		91E8E5461C4D1B1D002E587A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8E5451C4D1B1D002E587A /* ViewController.swift */; };
 		91E8E5491C4D1B1D002E587A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E8E5471C4D1B1D002E587A /* Main.storyboard */; };
@@ -25,11 +28,15 @@
 		91E8E56B1C4D24C7002E587A /* sale.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E8E56A1C4D24C7002E587A /* sale.m */; };
 		91E8E56E1C4D286A002E587A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E8E56C1C4D286A002E587A /* Bolts.framework */; };
 		91E8E56F1C4D286A002E587A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E8E56D1C4D286A002E587A /* Parse.framework */; };
+		91E8E5911C4D32CC002E587A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8E5901C4D32CC002E587A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05CC191FEC817A5BB54F0BFF /* Pods-StrawmanSaleVer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrawmanSaleVer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrawmanSaleVer/Pods-StrawmanSaleVer.debug.xcconfig"; sourceTree = "<group>"; };
 		8934BD66E589F0AC0A482403 /* Pods-StrawmanSaleVer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrawmanSaleVer.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrawmanSaleVer/Pods-StrawmanSaleVer.release.xcconfig"; sourceTree = "<group>"; };
+		91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginViewController.swift; sourceTree = "<group>"; };
+		91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
 		91E8E5401C4D1B1D002E587A /* StrawmanSaleVer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrawmanSaleVer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E8E5431C4D1B1D002E587A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E8E5451C4D1B1D002E587A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +57,7 @@
 		91E8E56A1C4D24C7002E587A /* sale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sale.m; sourceTree = "<group>"; };
 		91E8E56C1C4D286A002E587A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		91E8E56D1C4D286A002E587A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		91E8E5901C4D32CC002E587A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B352BFD65F2E2740CC120169 /* Pods_StrawmanSaleVer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StrawmanSaleVer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +78,7 @@
 				91E8E5561C4D23E3002E587A /* AudioToolbox.framework in Frameworks */,
 				91E8E56F1C4D286A002E587A /* Parse.framework in Frameworks */,
 				07B85975897239D5170ADECD /* Pods_StrawmanSaleVer.framework in Frameworks */,
+				91BB69CF1C4D3AFE00603A35 /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,7 @@
 		8741F2AAE6D33259F9818B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */,
 				91E8E56C1C4D286A002E587A /* Bolts.framework */,
 				91E8E56D1C4D286A002E587A /* Parse.framework */,
 				91E8E5671C4D2439002E587A /* libsqlite3.tbd */,
@@ -117,13 +127,16 @@
 			isa = PBXGroup;
 			children = (
 				91E8E5431C4D1B1D002E587A /* AppDelegate.swift */,
-				91E8E56A1C4D24C7002E587A /* sale.m */,
 				91E8E5451C4D1B1D002E587A /* ViewController.swift */,
 				91E8E5471C4D1B1D002E587A /* Main.storyboard */,
+				91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */,
+				91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */,
 				91E8E54A1C4D1B1D002E587A /* Assets.xcassets */,
 				91E8E54C1C4D1B1D002E587A /* LaunchScreen.storyboard */,
 				91E8E54F1C4D1B1D002E587A /* Info.plist */,
 				91E8E5691C4D24C7002E587A /* StrawmanSaleVer-Bridging-Header.h */,
+				91E8E56A1C4D24C7002E587A /* sale.m */,
+				91E8E5901C4D32CC002E587A /* LoginViewController.swift */,
 			);
 			path = StrawmanSaleVer;
 			sourceTree = "<group>";
@@ -268,6 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E8E5911C4D32CC002E587A /* LoginViewController.swift in Sources */,
+				91BB69D11C4D462F00603A35 /* CustomLoginViewController.swift in Sources */,
+				91BB69D31C4D464500603A35 /* CustomSignUpViewController.swift in Sources */,
 				91E8E5461C4D1B1D002E587A /* ViewController.swift in Sources */,
 				91E8E56B1C4D24C7002E587A /* sale.m in Sources */,
 				91E8E5441C4D1B1D002E587A /* AppDelegate.swift in Sources */,
