@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07B85975897239D5170ADECD /* Pods_StrawmanSaleVer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B352BFD65F2E2740CC120169 /* Pods_StrawmanSaleVer.framework */; };
+		914725281C4E272400A5116A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914725271C4E272400A5116A /* MapKit.framework */; };
 		91BB69CF1C4D3AFE00603A35 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */; };
 		91BB69D11C4D462F00603A35 /* CustomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */; };
 		91BB69D31C4D464500603A35 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		05CC191FEC817A5BB54F0BFF /* Pods-StrawmanSaleVer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrawmanSaleVer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StrawmanSaleVer/Pods-StrawmanSaleVer.debug.xcconfig"; sourceTree = "<group>"; };
 		8934BD66E589F0AC0A482403 /* Pods-StrawmanSaleVer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StrawmanSaleVer.release.xcconfig"; path = "Pods/Target Support Files/Pods-StrawmanSaleVer/Pods-StrawmanSaleVer.release.xcconfig"; sourceTree = "<group>"; };
+		914725271C4E272400A5116A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginViewController.swift; sourceTree = "<group>"; };
 		91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				91E8E5661C4D242F002E587A /* libz.tbd in Frameworks */,
 				91E8E5641C4D2424002E587A /* SystemConfiguration.framework in Frameworks */,
 				91E8E5601C4D2413002E587A /* Security.framework in Frameworks */,
+				914725281C4E272400A5116A /* MapKit.framework in Frameworks */,
 				91E8E55E1C4D240B002E587A /* QuartzCore.framework in Frameworks */,
 				91E8E55C1C4D2402002E587A /* CoreLocation.framework in Frameworks */,
 				91E8E55A1C4D23F8002E587A /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +91,7 @@
 		8741F2AAE6D33259F9818B55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				914725271C4E272400A5116A /* MapKit.framework */,
 				91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */,
 				91E8E56C1C4D286A002E587A /* Bolts.framework */,
 				91E8E56D1C4D286A002E587A /* Parse.framework */,
@@ -189,6 +193,9 @@
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 1;

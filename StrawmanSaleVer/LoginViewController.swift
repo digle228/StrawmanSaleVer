@@ -18,28 +18,24 @@ class LoginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        
+                
         self.presentViewController(LoginViewController, animated:true, completion: nil)
         
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        
         
         if (PFUser.currentUser() == nil ){
             self.LoginViewController.fields =
-                    PFLogInFields.UsernameAndPassword
-                  PFLogInFields.LogInButton
-                  PFLogInFields.SignUpButton
-                  PFLogInFields.PasswordForgotten
-                  PFLogInFields.DismissButton
+                PFLogInFields.UsernameAndPassword
+            PFLogInFields.LogInButton
+            PFLogInFields.SignUpButton
+            PFLogInFields.PasswordForgotten
+            PFLogInFields.DismissButton
             
-            var logInLogoTitle = UILabel()
+            let logInLogoTitle = UILabel()
             
             logInLogoTitle.text = "Strawman"
             
@@ -47,7 +43,7 @@ class LoginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
             
             self.LoginViewController.delegate = self
             
-            var signUpLogoTitle = UILabel()
+            let signUpLogoTitle = UILabel()
             
             signUpLogoTitle.text = "Strawamn"
             
@@ -56,10 +52,15 @@ class LoginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
             self.signUpViewCOntroller.delegate = self
             
             self.LoginViewController.signUpController = self.signUpViewCOntroller
-            
-            
-            
         }
+        
+    }
+        
+        
+        
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
         
         
         // Dispose of any resources that can be recreated.
@@ -80,6 +81,7 @@ class LoginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
     func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
         print("Failed to login")
     }

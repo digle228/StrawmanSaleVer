@@ -10,14 +10,14 @@ import UIKit
 import Parse
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Parse.setApplicationId("jxXIKgnEqpwS4C8qEAqtkjmsXtclUB6SXn5xdoiZ",
-            clientKey: "lLuu0qBEJH3s4k1b4i6Y5onwEO1nvmwqcUd2xAOE")
+        Parse.setApplicationId("4d8AR23rbppQJGOo6iJD17sFXUHXcuupueSytFt2",
+            clientKey: "4MmkX4gJ0dQtiOM9QQUO6xrq6JdSmorihp8S4MVF")
         
         
         // Register for Push Notitications
