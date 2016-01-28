@@ -4,8 +4,7 @@
 //
 //  Created by wusuchen on 2016/1/19.
 //  Copyright © 2016年 alphacamp. All rights reserved.
-//
-
+//  https://www.youtube.com/watch?v=a5pzlbBnfYg
 import UIKit
 import Parse
 
@@ -19,6 +18,8 @@ class CustomLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.actInt.center = self.view.center
         
         self.actInt.hidesWhenStopped = true
@@ -54,7 +55,7 @@ class CustomLoginViewController: UIViewController {
         let password = self.passwordField.text
         
         
-        if (username?.utf16.count < 4 || password?.utf16.count < 5){
+        if (username?.utf8.count < 4 || password?.utf8.count < 5){
             
             let alert = UIAlertController(title: "Invalid", message: "Username must be greater then 4 and Password must be greater then 5.", preferredStyle: UIAlertControllerStyle.Alert )
             let callAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Destructive, handler: { action in })
@@ -82,11 +83,13 @@ class CustomLoginViewController: UIViewController {
             */
             
         }else{
+            
             self.actInt.startAnimating()
             
             PFUser.logInWithUsernameInBackground(username!, password: password!) { (user, error) -> Void in
                 
                 self.actInt.stopAnimating()
+                print("Parseuser:\(user!)")
                 
                 if ((user) != nil) {
                     
@@ -94,12 +97,24 @@ class CustomLoginViewController: UIViewController {
                     
                     let callAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Destructive, handler: { action in })
                     alert.addAction(callAction)
+                    let Home = self.storyboard?.instantiateViewControllerWithIdentifier("Home")
+                    
 
-                    
-                    self.presentViewController(alert, animated: true, completion: nil)
-                    
-                    
-                    
+                    self.presentViewController(Home!, animated: true, completion: nil)
+//                    self.presentViewController(alert, animated: true, completion: nil)
+                    //取PF的ID
+                    let query = PFQuery(className: "_User")
+                        let userToken = user!.objectId!
+                        let name = user!["username"]
+                        let auth_token = userToken
+                        print("user: \(userToken)")
+                    print("username : \(name)")
+                    //跳頁面
+               
+//                    self.dismissViewControllerAnimated(false, completion: nil)
+
+                
+        
                 }else{
                     
                     let alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: UIAlertControllerStyle.Alert )

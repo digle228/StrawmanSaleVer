@@ -12,6 +12,9 @@
 		91BB69CF1C4D3AFE00603A35 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */; };
 		91BB69D11C4D462F00603A35 /* CustomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */; };
 		91BB69D31C4D464500603A35 /* CustomSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */; };
+		91E481421C59C53E00F2C673 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E481411C59C53E00F2C673 /* HomeTabViewController.swift */; };
+		91E481441C59C56200F2C673 /* auth_token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E481431C59C56200F2C673 /* auth_token.swift */; };
+		91E481461C59CC0900F2C673 /* UserOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E481451C59CC0900F2C673 /* UserOrderTableViewController.swift */; };
 		91E8E5441C4D1B1D002E587A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8E5431C4D1B1D002E587A /* AppDelegate.swift */; };
 		91E8E5461C4D1B1D002E587A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E8E5451C4D1B1D002E587A /* ViewController.swift */; };
 		91E8E5491C4D1B1D002E587A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E8E5471C4D1B1D002E587A /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 		91BB69CE1C4D3AFE00603A35 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginViewController.swift; sourceTree = "<group>"; };
 		91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignUpViewController.swift; sourceTree = "<group>"; };
+		91E481411C59C53E00F2C673 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		91E481431C59C56200F2C673 /* auth_token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auth_token.swift; sourceTree = "<group>"; };
+		91E481451C59CC0900F2C673 /* UserOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOrderTableViewController.swift; sourceTree = "<group>"; };
 		91E8E5401C4D1B1D002E587A /* StrawmanSaleVer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrawmanSaleVer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E8E5431C4D1B1D002E587A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E8E5451C4D1B1D002E587A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 				91E8E5431C4D1B1D002E587A /* AppDelegate.swift */,
 				91E8E5451C4D1B1D002E587A /* ViewController.swift */,
 				91E8E5471C4D1B1D002E587A /* Main.storyboard */,
+				91E481451C59CC0900F2C673 /* UserOrderTableViewController.swift */,
 				91BB69D01C4D462F00603A35 /* CustomLoginViewController.swift */,
 				91BB69D21C4D464500603A35 /* CustomSignUpViewController.swift */,
 				91E8E54A1C4D1B1D002E587A /* Assets.xcassets */,
@@ -141,6 +148,8 @@
 				91E8E5691C4D24C7002E587A /* StrawmanSaleVer-Bridging-Header.h */,
 				91E8E56A1C4D24C7002E587A /* sale.m */,
 				91E8E5901C4D32CC002E587A /* LoginViewController.swift */,
+				91E481411C59C53E00F2C673 /* HomeTabViewController.swift */,
+				91E481431C59C56200F2C673 /* auth_token.swift */,
 			);
 			path = StrawmanSaleVer;
 			sourceTree = "<group>";
@@ -288,10 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E481461C59CC0900F2C673 /* UserOrderTableViewController.swift in Sources */,
 				91E8E5911C4D32CC002E587A /* LoginViewController.swift in Sources */,
 				91BB69D11C4D462F00603A35 /* CustomLoginViewController.swift in Sources */,
 				91BB69D31C4D464500603A35 /* CustomSignUpViewController.swift in Sources */,
+				91E481421C59C53E00F2C673 /* HomeTabViewController.swift in Sources */,
 				91E8E5461C4D1B1D002E587A /* ViewController.swift in Sources */,
+				91E481441C59C56200F2C673 /* auth_token.swift in Sources */,
 				91E8E56B1C4D24C7002E587A /* sale.m in Sources */,
 				91E8E5441C4D1B1D002E587A /* AppDelegate.swift in Sources */,
 			);

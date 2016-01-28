@@ -23,13 +23,16 @@ class LoginViewController: UIViewController, PFLogInViewControllerDelegate, PFSi
         
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
         
         if (PFUser.currentUser() == nil ){
             self.LoginViewController.fields =
-                PFLogInFields.UsernameAndPassword
+            PFLogInFields.UsernameAndPassword
+            PFLogInFields.Facebook
             PFLogInFields.LogInButton
             PFLogInFields.SignUpButton
             PFLogInFields.PasswordForgotten

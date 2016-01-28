@@ -93,6 +93,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-StrawmanSaleVer/ParseUI.framework"
   install_framework "Pods-StrawmanSaleVer/QRCode.framework"
   install_framework "Pods-StrawmanSaleVer/SVProgressHUD.framework"
+  install_framework "Pods-StrawmanSaleVer/SwiftQRCode.framework"
   install_framework "Pods-StrawmanSaleVer/SwiftyJSON.framework"
   install_framework "Pods-StrawmanSaleVer/YYWebImage.framework"
 fi
@@ -106,6 +107,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-StrawmanSaleVer/ParseUI.framework"
   install_framework "Pods-StrawmanSaleVer/QRCode.framework"
   install_framework "Pods-StrawmanSaleVer/SVProgressHUD.framework"
+  install_framework "Pods-StrawmanSaleVer/SwiftQRCode.framework"
   install_framework "Pods-StrawmanSaleVer/SwiftyJSON.framework"
   install_framework "Pods-StrawmanSaleVer/YYWebImage.framework"
 fi
